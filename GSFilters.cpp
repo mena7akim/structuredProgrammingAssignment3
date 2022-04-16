@@ -234,19 +234,16 @@ void darkenLighten()
 
 void detectImage(){
     unsigned char detectedImage[SIZE][SIZE];
-    int average = arraySum(image,SIZE)/(SIZE*SIZE);
+    int GX,GY;
     for (int i = 0; i < SIZE ; i++){
         for(int j = 0; j < SIZE ; j++){
-            detectedImage[i][j]=255;
-            if ((image[i][j]>average && image[i+1][j]<average)||(image[i][j]<average && image[i+1][j]>average)){
-                detectedImage[i][j]=0;
-            }
-            if ((image[i][j]>average && image[i][j+1]<average)||(image[i][j]<average && image[i][j+1]>average)){
-                detectedImage[i][j]=0;
-            }
+            GX = (image[i][j-1]*-1)+(image[i][j+1]*1);
+            GY = (image[i-1][j]*-1) + (image[i+1][j]*1);
+                detectedImage[i][j] = sqrt(GX*GX+GY*GY);
         }
     }
     arrayAssign(image,detectedImage);
+    invertImage();
 }
 
 void enlargeImage(){
