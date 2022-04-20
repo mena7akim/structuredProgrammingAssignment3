@@ -16,20 +16,20 @@ void invertImage();
 void mergeImage();
 void flipImage();
 void rotateImage();
-//void darkenLighten();
-//void detectImage();
+void darkenLighten();
+void detectImage();
 void enlargeImage();
-//void shrinkImage();
+void shrinkImage();
 void mirrorImage();
-//void shuffleImage();
+void shuffleImage();
 void blurImage();
 
 // Functions needed in filters
 int arraySum(unsigned char arr[][SIZE][RGB],int n);
 void arrayScale(unsigned char a[][SIZE][RGB], unsigned char b[][SIZE][RGB], int x, int y);
 void arrayAssign(unsigned char a[][SIZE][RGB],unsigned char b[][SIZE][RGB]);
-//void arrayShrink(unsigned char a[][SIZE],unsigned char b[][SIZE],int n);
-//void arrangingImages(unsigned char a[][SIZE][RGB], unsigned char b[][SIZE][RGB], int order, int x, int y);
+void arrayShrink(unsigned char a[][SIZE][RGB],unsigned char b[][SIZE][RGB],int n);
+void arrangingImages(unsigned char a[][SIZE][RGB], unsigned char b[][SIZE][RGB], int order, int x, int y);
 int blurAlgorithm(unsigned char a[][SIZE][RGB], int b, int c,int k, int i);
 
 
@@ -65,24 +65,24 @@ void menu()
         case 5:
             rotateImage();
             break;
-//        case 6:
-//            darkenLighten();
-//            break;
-//        case 7:
-//            detectImage();
-//            break;
+       case 6:
+           darkenLighten();
+           break;
+       case 7:
+           detectImage();
+           break;
         case 8:
             enlargeImage();
             break;
-//        case 9:
-//            shrinkImage();
-//            break;
+       case 9:
+           shrinkImage();
+           break;
         case 10:
             mirrorImage();
             break;
-//        case 11:
-//            shuffleImage();
-//            break;
+       case 11:
+           shuffleImage();
+           break;
         case 12:
             blurImage();
             break;
@@ -249,6 +249,69 @@ void rotateImage()
         arrayAssign(image, rotatedImage);
     }
 }
+
+
+void darkenLighten()
+{
+    int operation;
+    cout <<"1-Darken\n2-Lighten\n";
+    cin >> operation;
+    switch (operation)
+    {
+        case 1:
+            for (int m=0 ; m<RGB ; m++)
+            {
+                for (int i = 0; i < SIZE; i++)                      //6
+                {
+                    for (int j = 0; j < SIZE; j++)
+                    {
+                        image[i][j][m] = (image[i][j][m] / 2);
+                    }
+                }
+            }
+            break;
+        case 2:
+            for (int m=0 ; m < RGB ; m++)
+            {
+                for (int i = 0; i < SIZE; i++)
+                {
+                    for (int j = 0; j < SIZE; j++)
+                    {
+                        image[i][j][m] = ((image[i][j][m]+ 255)  /  2);
+                    }
+                }
+            }
+            break;
+    }
+}
+
+void detectImage()
+{
+    unsigned char detectedImage[SIZE][SIZE][RGB];
+    int GX,GY;
+    for (int m=0 ; m<RGB ; m++)
+    {
+        for (int i = 0; i < SIZE ; i++)
+        {                                                                      //7
+            for(int j = 0; j < SIZE ; j++)
+            {
+                GX = (image[i][j-1][m]*-1)+(image[i][j+1][m]*1);
+                GY = (image[i-1][j][m]*-1) + (image[i+1][j][m]*1);
+                detectedImage[i][j][m] = sqrt(GX*GX+GY*GY);
+            }
+        }
+    }
+    arrayAssign(image,detectedImage);
+    invertImage();
+}
+
+
+
+
+
+
+
+
 void enlargeImage(){
     unsigned char scaledImage[SIZE][SIZE][RGB];
     int scaleType;
@@ -271,6 +334,44 @@ void enlargeImage(){
     }
     arrayAssign(image, scaledImage);
 }
+
+
+
+
+void shrinkImage(){
+    int shrink;
+    unsigned char scaledImage[SIZE][SIZE][RGB];
+    cout <<"1- 1/2\n2- 1/3\n3- 1/4\n";
+    cin >> shrink;
+    for(int m=0 ; m<RGB ; m++)
+    {
+        for (int i = 0; i < SIZE ; i++)
+        {
+            for (int j = 0; j < SIZE; j++)
+            {
+                scaledImage[i][j][m]=255;                      //9
+            }
+        }
+    }
+    switch (shrink) {
+        case 1:
+            arrayShrink(scaledImage, image, 2);
+            break;
+        case 2:
+            arrayShrink(scaledImage, image, 3);
+            break;
+        case 3:
+            arrayShrink(scaledImage, image, 4);
+            break;
+
+    }
+    arrayAssign(image, scaledImage);
+}
+
+
+
+
+
 void mirrorImage()
 {
     int mirrorType;
@@ -348,6 +449,39 @@ void mirrorImage()
         }
 
     }
+
+
+void shuffleImage(){                      //11
+    int order,i=0;
+    unsigned char refrenceImage[SIZE][SIZE][RGB];
+    arrayAssign(refrenceImage, image);
+    cout << "Enter the order you wnat to the quarter" << endl;
+    while(i<4)
+    {
+        cin >> order;
+        switch (i+1)
+        {
+            case 1:
+                arrangingImages(image,refrenceImage,order,0,0);
+                break;
+            case 2:
+                arrangingImages(image,refrenceImage,order,0,128);
+                break;
+            case 3:
+                arrangingImages(image,refrenceImage,order,128,0);
+                break;
+            case 4:
+                arrangingImages(image,refrenceImage,order,128,128);
+                break;
+
+        }
+        i++;
+    }
+
+}
+
+
+
 void blurImage(){
     int blurLevel;
     unsigned char referenceImage[SIZE][SIZE][RGB];
@@ -362,6 +496,9 @@ void blurImage(){
             }
         }
 }
+
+//functions needed at filters 
+
 void arrayScale(unsigned char a[][SIZE][RGB], unsigned char b[][SIZE][RGB], int x, int y){
     unsigned char temp[SIZE/2][SIZE/2][RGB];
     for (int i=0;i<SIZE/2;i++) {
@@ -378,6 +515,75 @@ void arrayScale(unsigned char a[][SIZE][RGB], unsigned char b[][SIZE][RGB], int 
         }
     }
 }
+}
+
+
+
+void arrayShrink(unsigned char a[][SIZE][RGB],unsigned char b[][SIZE][RGB],int n)
+{
+    for(int m=0 ; m<RGB ; m++)
+    {
+        for (int i = 0; i < SIZE ; i++)
+        {
+            for (int j = 0; j < SIZE ; j++)
+            {
+                a[i/n][j/n][m]=b[i][j][m];
+            }
+        }
+    }
+}
+
+
+
+void arrangingImages(unsigned char a[][SIZE][RGB], unsigned char b[][SIZE][RGB], int order, int x, int y){
+    switch (order) {
+        case 1:
+            for(int m=0 ; m<RGB ; m++)
+            {
+                for (int i = 0; i < SIZE/2; i++)
+                {
+                    for(int j = 0; j < SIZE/2; j++)
+                    {
+                        a[i+x][j+y][m] = b[i][j][m];
+                    }
+                }
+            }
+            break;
+        case 2:
+            for(int m=0 ; m<RGB ; m++)
+            {
+                for (int i = 0; i < SIZE/2; i++){
+                    for(int j = 0; j < SIZE/2; j++){
+                        a[i+x][j+y][m] = b[i][j+128][m];
+                    }
+                }
+            }
+            break;
+        case 3:
+            for(int m=0 ; m<RGB ; m++)
+            {
+                for (int i = 0; i < SIZE/2; i++)
+                {
+                    for(int j = 0; j < SIZE/2; j++)
+                    {
+                        a[i+x][j+y][m] = b[i+128][j][m];
+                    }
+                }
+            }
+            break;
+        case 4:
+            for(int m=0 ; m<RGB ; m++)
+            {
+                for (int i = 0; i < SIZE/2; i++)
+                {
+                    for(int j = 0; j < SIZE/2; j++)
+                    {
+                        a[i+x][j+y][m] = b[i+128][j+128][m];
+                    }
+                }
+            }
+            break;
+    }
 }
 int blurAlgorithm(unsigned char a[][SIZE][RGB], int b, int c,int k, int level){
     speedup
