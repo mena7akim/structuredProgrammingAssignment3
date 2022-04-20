@@ -390,3 +390,4 @@ int blurAlgorithm(unsigned char a[][SIZE][RGB], int b, int c,int k, int level){
 
     return blur/(level*level);
 }
+
