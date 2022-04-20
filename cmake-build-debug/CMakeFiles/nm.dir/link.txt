@@ -1,0 +1,3 @@
+"D:\New folder\CLion 2022.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\nm.dir/objects.a
+"D:\New folder\CLion 2022.1\bin\mingw\bin\ar.exe" qc CMakeFiles\nm.dir/objects.a @CMakeFiles\nm.dir\objects1.rsp
+"D:\New folder\CLion 2022.1\bin\mingw\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\nm.dir/objects.a -Wl,--no-whole-archive -o nm.exe -Wl,--out-implib,libnm.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\nm.dir\linklibs.rsp

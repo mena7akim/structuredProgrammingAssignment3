@@ -30,7 +30,7 @@ void arrayScale(unsigned char a[][SIZE], unsigned char b[][SIZE], int x, int y);
 void arrayAssign(unsigned char a[][SIZE],unsigned char b[][SIZE]);
 void arrayShrink(unsigned char a[][SIZE],unsigned char b[][SIZE],int n);
 void arrangingImages(unsigned char a[][SIZE], unsigned char b[][SIZE], int order, int x, int y);
-int blurAlgorithm(unsigned char a[][SIZE], int b, int c, int i);
+int blurAlgorithm(unsigned char a[][SIZE], int b, int c, int level);
 
 
 int main() {
@@ -356,7 +356,7 @@ void shuffleImage(){
     int order,i=0;
     unsigned char refrenceImage[SIZE][SIZE];
     arrayAssign(refrenceImage, image);
-    cout << "Enter the order you wnat to the quarter" << endl;
+    cout << "Enter the order you want to the quarter" << endl;
     while(i<4){
         cin >> order;
         switch (i+1) {

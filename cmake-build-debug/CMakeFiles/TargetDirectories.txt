@@ -1,4 +1,5 @@
-D:/Assignment 3/Structured-Programming---Assignment-3--/cmake-build-debug/CMakeFiles/GSFilters.dir
-D:/Assignment 3/Structured-Programming---Assignment-3--/cmake-build-debug/CMakeFiles/RGBFilters.dir
-D:/Assignment 3/Structured-Programming---Assignment-3--/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Assignment 3/Structured-Programming---Assignment-3--/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/CMakeFiles/GSFilters.dir
+D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/CMakeFiles/RGBFilters.dir
+D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/CMakeFiles/nm.dir
+D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/CMakeFiles/rebuild_cache.dir

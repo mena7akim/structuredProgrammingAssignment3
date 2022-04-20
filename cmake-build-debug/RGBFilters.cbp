@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="RGBFilters"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GSFilters">
+				<Option output="D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/GSFilters.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 GSFilters"/>
+					<CompileFile command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GSFilters/fast">
+				<Option output="D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/GSFilters.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 GSFilters/fast"/>
+					<CompileFile command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RGBFilters">
+				<Option output="D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/RGBFilters.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 RGBFilters"/>
+					<CompileFile command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RGBFilters/fast">
+				<Option output="D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/RGBFilters.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 RGBFilters/fast"/>
+					<CompileFile command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nm">
+				<Option output="D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/nm.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 nm"/>
+					<CompileFile command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nm/fast">
+				<Option output="D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/nm.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="D:/New folder/CLion 2022.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 nm/fast"/>
+					<CompileFile command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/New folder/CLion 2022.1/bin/mingw/bin/mingw32-make.exe -f &quot;D:/assignment 3.programming/structuredProgrammingAssignment3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/assignment 3.programming/structuredProgrammingAssignment3/GSFilters.cpp">
+			<Option target="GSFilters"/>
+		</Unit>
+		<Unit filename="D:/assignment 3.programming/structuredProgrammingAssignment3/RGBFilters.cpp">
+			<Option target="RGBFilters"/>
+		</Unit>
+		<Unit filename="D:/assignment 3.programming/structuredProgrammingAssignment3/bmplib.cpp">
+			<Option target="nm"/>
+		</Unit>
+		<Unit filename="D:/assignment 3.programming/structuredProgrammingAssignment3/bmplib.h">
+			<Option target="nm"/>
+		</Unit>
+		<Unit filename="D:/assignment 3.programming/structuredProgrammingAssignment3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
