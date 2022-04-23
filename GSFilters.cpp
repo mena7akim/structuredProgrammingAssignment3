@@ -1,3 +1,10 @@
+// FCI – Programming 1 – 2022 - Assignment 3
+// Program Name: CS112-203-2nd–S24,25-20210418-20210567-20210438-FULL.cpp
+// Last Modification Date: 23/04/2022
+// Author1 and ID and Group: Mina Hakim Eskarous 20210418
+// Author2 and ID and Group: Shahd Mohsen Mohamed 20210567
+// Author3 and ID and Group: Nervana Milad Sedky 20210438
+// Teaching Assistant: Eng. Mahmoud Fateaha
 #include <bits/stdc++.h>
 #include "bmplib.cpp"
 #define speedup  ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
@@ -356,7 +363,7 @@ void shuffleImage(){
     int order,i=0;
     unsigned char refrenceImage[SIZE][SIZE];
     arrayAssign(refrenceImage, image);
-    cout << "Enter the order you want to the quarter" << endl;
+    cout << "Enter the order you want to the quarters" << endl;
     while(i<4){
         cin >> order;
         switch (i+1) {
